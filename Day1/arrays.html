@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    //Create an array of five student objects. Each object should have a name, an age, and a course. Then:
+    // Use map() to create an array of just the student names and log it.
+    // Use filter() to get the students older than 20 and log the result.
+    // Use find() to locate the first student enrolled in Software Development and log that student.
+
+        // 1. Get students names with map()
+        let pupils = [{name: "John", age: 19, course: "Software Engineer" },
+        {name: "Mary", age: 18, course: "Cyber Security"},
+        {name: "Kevin", age: 22, course: "Software Development"},
+        {name: "Eve", age: 20, course: "Digital Design"},
+        {name: "Sarah", age: 21, course: "Digital Marketing"}];
+
+        let studentNames = pupils.map(pupil => pupil.name);
+        console.log(studentNames);
+
+        // 2.Get students older than 20 with fliter()
+        let studentAge = pupils.filter(student => student.age > 20);
+        console.log(studentAge);
+
+        // 3. Find first student enrolled in Software Development
+        let studentCourse = pupils.find(student => student.course === "Software Development");
+            if (studentCourse === undefined)
+            {
+                console.log("This is course is unavailable");
+                
+            } else{console.log(studentCourse);
+
+            }
+            
+
+
+        
+
+
+
+    </script>
+</body>
+</html>
